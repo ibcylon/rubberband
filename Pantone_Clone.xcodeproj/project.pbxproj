@@ -12,6 +12,12 @@
 		D51DAB902CC77AE800427532 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DAB8F2CC77AE800427532 /* Item.swift */; };
 		D51DAB922CC77AEE00427532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51DAB912CC77AEE00427532 /* Assets.xcassets */; };
 		D51DAB952CC77AEE00427532 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51DAB942CC77AEE00427532 /* Preview Assets.xcassets */; };
+		D51DAB9C2CC77B7500427532 /* ChipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DAB9B2CC77B7500427532 /* ChipContentView.swift */; };
+		D51DAB9E2CC78E0500427532 /* RubberBand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DAB9D2CC78E0500427532 /* RubberBand.swift */; };
+		D51DABA02CC8DA0100427532 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DAB9F2CC8DA0100427532 /* MainTab.swift */; };
+		D51DABA42CC8DE3B00427532 /* ColorChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DABA32CC8DE3B00427532 /* ColorChip.swift */; };
+		D51DABA72CC8ED8000427532 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DABA62CC8ED8000427532 /* Color+Ext.swift */; };
+		D51DABAB2CCFAC4C00427532 /* ChipDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51DABAA2CCFAC4C00427532 /* ChipDebugView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,12 @@
 		D51DAB8F2CC77AE800427532 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		D51DAB912CC77AEE00427532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D51DAB942CC77AEE00427532 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D51DAB9B2CC77B7500427532 /* ChipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipContentView.swift; sourceTree = "<group>"; };
+		D51DAB9D2CC78E0500427532 /* RubberBand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBand.swift; sourceTree = "<group>"; };
+		D51DAB9F2CC8DA0100427532 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
+		D51DABA32CC8DE3B00427532 /* ColorChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChip.swift; sourceTree = "<group>"; };
+		D51DABA62CC8ED8000427532 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		D51DABAA2CCFAC4C00427532 /* ChipDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipDebugView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +65,13 @@
 		D51DAB8A2CC77AE800427532 /* Pantone_Clone */ = {
 			isa = PBXGroup;
 			children = (
+				D51DABA52CC8ED7600427532 /* Util */,
+				D51DABA22CC8DE0300427532 /* Rubberband */,
+				D51DABA12CC8DDFA00427532 /* PantoneChip */,
 				D51DAB8B2CC77AE800427532 /* Pantone_CloneApp.swift */,
-				D51DAB8D2CC77AE800427532 /* ContentView.swift */,
-				D51DAB8F2CC77AE800427532 /* Item.swift */,
 				D51DAB912CC77AEE00427532 /* Assets.xcassets */,
 				D51DAB932CC77AEE00427532 /* Preview Content */,
+				D51DAB9F2CC8DA0100427532 /* MainTab.swift */,
 			);
 			path = Pantone_Clone;
 			sourceTree = "<group>";
@@ -65,9 +79,37 @@
 		D51DAB932CC77AEE00427532 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				D51DAB8F2CC77AE800427532 /* Item.swift */,
+				D51DAB8D2CC77AE800427532 /* ContentView.swift */,
 				D51DAB942CC77AEE00427532 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D51DABA12CC8DDFA00427532 /* PantoneChip */ = {
+			isa = PBXGroup;
+			children = (
+				D51DAB9B2CC77B7500427532 /* ChipContentView.swift */,
+				D51DABAA2CCFAC4C00427532 /* ChipDebugView.swift */,
+				D51DABA32CC8DE3B00427532 /* ColorChip.swift */,
+			);
+			path = PantoneChip;
+			sourceTree = "<group>";
+		};
+		D51DABA22CC8DE0300427532 /* Rubberband */ = {
+			isa = PBXGroup;
+			children = (
+				D51DAB9D2CC78E0500427532 /* RubberBand.swift */,
+			);
+			path = Rubberband;
+			sourceTree = "<group>";
+		};
+		D51DABA52CC8ED7600427532 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D51DABA62CC8ED8000427532 /* Color+Ext.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51DAB8E2CC77AE800427532 /* ContentView.swift in Sources */,
+				D51DAB9E2CC78E0500427532 /* RubberBand.swift in Sources */,
+				D51DABAB2CCFAC4C00427532 /* ChipDebugView.swift in Sources */,
 				D51DAB902CC77AE800427532 /* Item.swift in Sources */,
+				D51DAB9C2CC77B7500427532 /* ChipContentView.swift in Sources */,
+				D51DABA02CC8DA0100427532 /* MainTab.swift in Sources */,
+				D51DABA72CC8ED8000427532 /* Color+Ext.swift in Sources */,
 				D51DAB8C2CC77AE800427532 /* Pantone_CloneApp.swift in Sources */,
+				D51DABA42CC8DE3B00427532 /* ColorChip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,18 +330,21 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kangho.Pantone-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.Rubber.Band;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,18 +362,21 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kangho.Pantone-Clone";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kangho.Rubber.Band;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
