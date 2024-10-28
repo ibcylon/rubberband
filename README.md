@@ -1,7 +1,9 @@
 # SwiftUI Component
 
 ### Rubber.band
-inspired rubber.band website
+<img width="50%" alt="스크린샷 2024-10-25 오후 6 52 03" src="https://github.com/user-attachments/assets/a549a17b-0400-49f0-9859-80b1c56d0d50">
+
+inspired [rubber.band website](https://rubber.band/)
 - [ ] motion blur
 - [ ] tilt, pan motion
 ### PantoneChip
